@@ -19,8 +19,8 @@ const wallets = [
 const opts = {
   preflightCommitment: "processed"
 }
-const programID = new PublicKey("4Pg66b3gEbe1VGDUMEKF4MnC4FscSB58eqmtiFHf5im8");
-const proxyprogID = new PublicKey("3efHuVFYRxg8dPFYY1aMriVifn6xzZTnmnkU5SRrZHYp")
+const programID = new PublicKey("ACZZdHNuhnvbrjE3DRVGdqg7X2NzKJAYGiEAd5bpA1sv");
+const proxyprogID = new PublicKey("3GhBo6kSG4519BGNj346DLS6S427UBvq1hfSctTA6qzx")
 function App() {
   const [pdaStatus, setPdaStatus] = useState(null);
   const [buttonDisabled, setButtonDisabled] = useState(true)
@@ -31,7 +31,7 @@ function App() {
   const wallet = useWallet();
 
   async function getProvider() {
-    const provider = new AnchorkProvider(
+    const provider = new AnchorProvider(
       connection, wallet, opts.preflightCommitment,
     );
     return provider;

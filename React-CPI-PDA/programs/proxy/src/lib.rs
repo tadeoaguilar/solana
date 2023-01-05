@@ -3,14 +3,13 @@ use cpipda::cpi::accounts::CreateUserSocials;
 use cpipda::program::Cpipda;
 use cpipda::{self, UserInfo};
 
-declare_id!("HKbTE9zSwQFx1vaXGxSe7EyFqdrmVyiEyeeuLWVwPo7W");
+declare_id!("3GhBo6kSG4519BGNj346DLS6S427UBvq1hfSctTA6qzx");
 
 #[program]
 mod proxy {
     use super::*;
     pub fn update_socials(
-        ctx: Context<SetSocials>, ```````````
-        ```-
+        ctx: Context<SetSocials>,
         name: String,
         twitter: String,
         discord: String,
